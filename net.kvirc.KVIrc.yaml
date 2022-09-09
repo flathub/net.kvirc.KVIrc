@@ -1,6 +1,6 @@
 app-id: net.kvirc.KVIrc
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 rename-icon: kvirc
 rename-desktop-file: kvirc.desktop
