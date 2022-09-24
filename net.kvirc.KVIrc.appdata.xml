@@ -24,7 +24,8 @@
   <url type="help">http://www.kvirc.net/?id=help</url>
   <developer_name>KVIrc Team</developer_name>
   <releases>
-    <release version="5.5.0" date="2019-01-01"/>
+    <release version="5.0.1" date="2019-10-12"/>
+    <release version="5.0.0" date="2019-01-01"/>
   </releases>
  <content_rating type="oars-1.1">
      <content_attribute id="social-chat">intense</content_attribute>
