@@ -16,6 +16,10 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=org.freedesktop.Notifications
 
+cleanup:
+  - /man
+  - /share/man
+
 modules:
   - name: kvirc
     buildsystem: cmake-ninja
