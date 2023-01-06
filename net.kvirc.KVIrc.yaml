@@ -1,4 +1,4 @@
-app-id: net.kvirc.KVIrc
+id: net.kvirc.KVIrc
 runtime: org.kde.Platform
 runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
