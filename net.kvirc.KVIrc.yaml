@@ -30,6 +30,6 @@ modules:
         url: https://github.com/kvirc/KVIrc.git
         commit: 3db2677fe511ec2f2ab986d165f36026f73f4da3
       - type: patch
-        path: kvirc-5.0.0_qt_5.15_fix.patch
+        path: kvirc-5.0.2-pre20220629.patch
       - type: file
         path: net.kvirc.KVIrc.appdata.xml
