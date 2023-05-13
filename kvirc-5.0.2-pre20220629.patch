@@ -1,0 +1,46 @@
+From c940f8f173b6e4b5baf89b354994b00cb9562d4d Mon Sep 17 00:00:00 2001
+From: Fabio Rodrigues Ribeiro <farribeiro@gmail.com>
+Date: Fri, 12 May 2023 21:05:29 -0300
+Subject: [PATCH] bump version to 5.0.2-pre20220629
+
+---
+ CMakeLists.txt                           | 2 +-
+ dist/build_debian.sh                     | 4 ++--
+ dist/debian/libkvilib5.lintian-overrides | 2 +-
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c6e6b39890..5c7a24a756 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -47,7 +47,7 @@ set(PACKAGE "kvirc")
+ set(NICENAME "KVIrc")
+ set(VERSION_MAJOR "5")
+ set(VERSION_BRANCH "5.0")
+-set(VERSION_RELEASE "5.0.1")
++set(VERSION_RELEASE "5.0.2-pre20220629")
+ set(VERSION_CODENAME "Aria")
+ # REMINDER: "Quasar" is a new candidate name.
+ 
+diff --git a/dist/build_debian.sh b/dist/build_debian.sh
+index 1fb8999cf0..8f49eb8edf 100644
+--- a/dist/build_debian.sh
++++ b/dist/build_debian.sh
+@@ -28,8 +28,8 @@ BUILDDIR="${DIR}/build"
+ cd .. && GITDIR=$(pwd)
+ PKG_NAME=kvirc
+ SVNGITBZR="~git-"
+-VERSION='4:5.0.1'
+-VERSION1='5.0.1'
++VERSION='4:5.0.2-pre20220629'
++VERSION1='5.0.2-pre20220629'
+ TMPFILE=$(mktemp)
+ TMPGPG=$(mktemp)
+ DIST_PPA="xenial bionic cosmic"
+diff --git a/dist/debian/libkvilib5.lintian-overrides b/dist/debian/libkvilib5.lintian-overrides
+index f80c3e5b0e..c04744113d 100644
+--- a/dist/debian/libkvilib5.lintian-overrides
++++ b/dist/debian/libkvilib5.lintian-overrides
+@@ -1 +1 @@
+-libkvilib5: no-symbols-control-file */libkvilib.so.5.0.1
++libkvilib5: no-symbols-control-file */libkvilib.so.5.0.2-pre20220629

@@ -3,7 +3,7 @@ runtime: org.kde.Platform
 runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 rename-icon: kvirc
-rename-desktop-file: kvirc.desktop
+rename-desktop-file: net.kvirc.KVIrc5.desktop
 command: kvirc
 
 finish-args:
@@ -24,12 +24,13 @@ modules:
   - name: kvirc
     buildsystem: cmake-ninja
     post-install:
+      - sed -i '/^Path/d' /app/share/applications/net.kvirc.KVIrc5.desktop
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.appdata.xml
     sources:
       - type: git
         url: https://github.com/kvirc/KVIrc.git
-        commit: 3db2677fe511ec2f2ab986d165f36026f73f4da3
+        commit: eb3fdd6b1d824f148fd6e582852dcba77fc9a271
       - type: patch
-        path: kvirc-5.0.0_qt_5.15_fix.patch
+        path: kvirc-5.0.2-pre20220629.patch
       - type: file
         path: net.kvirc.KVIrc.appdata.xml
