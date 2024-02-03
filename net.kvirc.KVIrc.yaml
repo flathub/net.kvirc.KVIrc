@@ -1,6 +1,6 @@
 id: net.kvirc.KVIrc
 runtime: org.kde.Platform
-runtime-version: '5.15-23.08'
+runtime-version: '6.6'
 sdk: org.kde.Sdk
 rename-icon: kvirc
 rename-desktop-file: net.kvirc.KVIrc5.desktop
@@ -28,8 +28,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/kvirc/KVIrc.git
-        commit: eb3fdd6b1d824f148fd6e582852dcba77fc9a271
-      - type: patch
-        path: kvirc-5.0.2-pre20220629.patch
+        commit: 496ee9c4cd0187868ff44af9380165055098e7cd
       - type: file
         path: net.kvirc.KVIrc.appdata.xml
