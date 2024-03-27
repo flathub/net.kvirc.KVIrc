@@ -29,6 +29,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/kvirc/KVIrc.git
-        commit: 496ee9c4cd0187868ff44af9380165055098e7cd
+        commit: 16ced6886c133968cf27a7dbc6a7d2fd59ab54a0
       - type: file
         path: net.kvirc.KVIrc.appdata.xml
