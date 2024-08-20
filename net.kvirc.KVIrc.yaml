@@ -30,5 +30,9 @@ modules:
       - type: git
         url: https://github.com/kvirc/KVIrc.git
         commit: 0bb27332d96426b95176648761680ff5a3e10dfe
+        x-checker-data:
+          type: git
+          tag-pattern: ([\d.]+)$
+          is-important: true
       - type: file
         path: net.kvirc.KVIrc.appdata.xml
