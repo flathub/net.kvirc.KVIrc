@@ -29,8 +29,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/kvirc/KVIrc.git
-        commit: 0bb27332d96426b95176648761680ff5a3e10dfe
-        tag: 5.2.4
+        commit: 0e01bc6b30dfa4a83ba098d60d05791518542db2
+        tag: 5.2.6
         x-checker-data:
           type: git
           tag-pattern: ([\d.]+)$
