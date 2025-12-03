@@ -9,7 +9,6 @@ command: kvirc
 finish-args:
   - --share=network
   - --socket=wayland
-  - --socket=fallback-x11
   - --share=ipc
   - --device=dri
   - --filesystem=xdg-download
